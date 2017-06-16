@@ -1,0 +1,149 @@
+*{
+  font-family: "Maven Pro", Arial, sans-serif;
+  box-sizing: border-box;
+  color: white;
+  background-color: #38ACEC;
+}
+.mainWidth{
+  width: 700px;
+  margin: 0 auto;
+}
+.logo{
+  font-size: 30px;
+  padding: 10px;
+  float:left;
+}
+section{
+  width: 100%;;
+  margin: 10 auto;
+  display: inline-block;
+}
+section::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+nav{
+  float:right;
+  display: inline-block;
+}
+li{
+  display: inline-block;
+  height: 40px;
+  list-style-type: none;
+  padding: 10px;
+}
+form{
+  float:right;
+  margin: 10px 0;
+}
+input{
+  background-color: white;
+  border-radius: 20px;
+  border-style: none;
+  padding:5px;
+  color: #555;
+}
+input[type="submit"]{
+  background-color: #369BDB;
+  padding: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+input[type="email"]:focus{
+  border:1px solid violet;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+a:hover, .button:hover{
+  background-color: #369BDB;
+  border-radius: 20px;
+  cursor: pointer;
+}
+a:active, .button:active{
+  box-shadow: inset 0 0 3px 3px #3069A8;
+}
+
+#iphone{
+  width:400px;
+  height:220px;
+  margin:10px;
+  background-image: url("../IMG/iphone.png");
+  background-position: top;
+  background-size: cover;
+  float: right;
+}
+#lorem{
+  font-size: 24px;
+  width:220px;
+  padding:30px;
+  font-weight: 200;
+  text-align: right;
+  margin: 20px;
+  float:left;
+}
+.button{
+  background-color: white;
+  color: #369BDB;
+  width:150px;
+  font-weight: bold;
+  text-align:center;
+  padding: 10px;
+  margin: 20px 10px;
+}
+.button:hover{
+  border-radius: 0;
+  color:white;
+}
+.text{
+  width: 700px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.column{
+  display: inline-block;
+  width:33.33%;
+  padding: 10px;
+  float:left;
+  text-align: justify;
+}
+.call{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding:30px;
+  color: #369BDB;
+}
+footer{
+  font-size: 12px;
+  background-color: #777;
+  padding:30px 10px;
+}
+footer div:first-child{
+  display: inline;
+  float: left;
+  background-color: #777;
+
+}
+footer div:last-child{
+  display: inline;
+  float:right;
+  background-color: #777;
+}
+.facebook{
+  position: fixed;
+  top: 60px;
+  background-image: url('../IMG/FB.png');
+  width:140px;
+  height: 70px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 0, 0, 0);
+}
+.facebook:hover{
+  background-color: rgba(255,255,255,0.2)
+}
