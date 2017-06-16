@@ -70,7 +70,7 @@ a:active, .button:active{
 #iphone{
   width:400px;
   height:220px;
-  margin:10px;
+  margin: 10px;
   background-image: url("../IMG/iphone.png");
   background-position: top;
   background-size: cover;
@@ -116,6 +116,12 @@ a:active, .button:active{
   text-align: center;
   padding:30px;
   color: #369BDB;
+  margin: -12px 0 20px 0;
+}
+.call:hover{
+  background-color: #3699AA;
+  color: white;
+  box-shadow: inset 0 0 10px 5px #358899;
 }
 footer{
   font-size: 12px;
@@ -126,7 +132,6 @@ footer div:first-child{
   display: inline;
   float: left;
   background-color: #777;
-
 }
 footer div:last-child{
   display: inline;
