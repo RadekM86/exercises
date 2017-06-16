@@ -71,7 +71,7 @@ a:active, .button:active{
   width:400px;
   height:220px;
   margin: 10px;
-  background-image: url("../IMG/iphone.png");
+  background-image: url("http://i65.tinypic.com/2n0t3tl.jpg");
   background-position: top;
   background-size: cover;
   float: right;
@@ -141,7 +141,7 @@ footer div:last-child{
 .facebook{
   position: fixed;
   top: 60px;
-  background-image: url('../IMG/FB.png');
+  background-image: url('http://i68.tinypic.com/r016ia.jpg');
   width:140px;
   height: 70px;
   background-position: top;
