@@ -1,0 +1,46 @@
+*{
+  font-family: "Verdana", Arial, Helvetica, sans-serif;
+  color: #444;
+  font-size: 20px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.main{
+  width: 600px;
+  margin: 0 auto;
+  background-color: #AAA;
+}
+header{
+  background-color: #999;
+  color: #FFF;
+  padding: 50px;
+  text-align: center;
+}
+.intro{
+  padding: 20px;
+  text-align: justify;
+}
+section::after{
+  clear:both;
+  content: "";
+  display: block;
+}
+.box{
+  display: inline;
+  float: left;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #333;
+  width: 33.33%;
+  height: 150px;
+  border: 10px solid #AAA;
+}
+footer div>div{
+  display: inline;
+}
+#copy{
+  float: left;
+}
+#year{
+  float: right;
+}
