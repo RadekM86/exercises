@@ -1,0 +1,91 @@
+*{
+  font-family: "Raleway", Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+header{
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+header .logo{
+  display: inline;
+  float: left;
+  line-height: 40px;
+  font-weight: 400;
+}
+header ul{
+  float:right;
+  line-height: 40px;
+}
+header li{
+  display: inline;
+  color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+span{
+  color: #24baa0;
+  font-weight: 900;
+}
+header::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+section::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+.arrow{
+  color:#24baa0;
+  padding: 120px 0;
+  font-size: 2em;
+  width:80px;
+  height:240px;
+}
+.chair{
+  width:400px;
+  height:337px;
+  background-image: url("../IMG/black_chair.png");
+  background-position: top;
+  background-size: cover;
+  float:left;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.gray{
+  background-color: #cac9d1;
+}
+.slider{
+  width: 100%;
+  height: 346px;
+  float: left;
+  background: #cac9d1;
+  display: inline-block;
+  /*
+  background: -webkit-linear-gradient(to bottom, white, #cac9d1);
+  background: -o-linear-gradient(to bottom, white, #cac9d1);
+  background: -moz-linear-gradient(to bottom, white, #cac9d1);*/
+  background: linear-gradient(to bottom, white, #cac9d1);
+}
+.lorem{
+  width: 300px;
+  height: 240px;
+  display: inline-block;
+}
