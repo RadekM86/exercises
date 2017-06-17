@@ -6,7 +6,7 @@
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 body{
   font-size: 14px;
@@ -325,7 +325,7 @@ textarea{
 .check{
   background-image: url('../IMG/form_ok.jpg');
   width:30px;
-  height: 30px;
+  height:30px;
   border: 1px solid #AAA;
   background-position: center;
   background-size: contain;
@@ -337,4 +337,35 @@ textarea{
   padding:10px;
   font-size: 20px;
   text-align: center;
+}
+footer>div div{
+  display: inline-block;
+}
+.copy{
+  font-size: 12px;
+  float: left;
+}
+.copy::after{
+  clear:left;
+}
+#logoBottom{
+  float: right;
+  font-size: 12px;
+}
+#pinterest{
+  background-image: url('../IMG/pinterest.png');
+}
+#twitter{
+  background-image: url('../IMG/twitter.png');
+}
+#vimeo{
+  background-image: url('../IMG/vimeo.png');
+}
+#flickr{
+  background-image: url('../IMG/flickr.png');
+}
+#pinterest, #flickr, #twitter, #vimeo{
+  width:20px;
+  height:20px;
+  background-size: contain;
 }
