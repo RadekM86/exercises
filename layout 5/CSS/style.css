@@ -189,13 +189,14 @@ h1{
 .plan{
   background-color: #EEE;
   width: 320px;
-  height:400px;
+  height:460px;
   float:left;
   display: inline-block;
   margin: 30px 0;
-  color: #AAA;
+  color: #999;
   border: 2px solid #AAA;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 400;
   color: #24baa0;
   text-align: center;
   position: relative;
@@ -203,11 +204,11 @@ h1{
 .price{
   background-color: white;
   margin: 20px auto;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #AAA;
-  width: 100px;
-  height:100px;
+  width: 120px;
+  height:120px;
   text-align: center;
   border-radius: 50%;
   border: 2px solid #AAA;
@@ -238,6 +239,7 @@ sup{
   font-weight: 400;
   color: #999;
   list-style-type: none;
+  padding:5px;
 }
 .plan li:nth-child(2n+1){
   background-color: #CCC;
@@ -261,7 +263,7 @@ sup{
   background-color:  #24baa0;
   border: 2px solid  #24baa0;
 }
-#join .middle{
+.middle #join{
   background-color: white;
   color:  #24baa0;
 }
@@ -275,4 +277,64 @@ sup{
   background-color: white;
   box-shadow: none;
   border-color: #24baa0;
+}
+.middle .price{
+  color: #24baa0;
+}
+#contact{
+  font-size: 1.5em;
+  font-weight: 400px;
+  margin: 10px 0;
+}
+#left{
+  width: 600px;
+  float:left;
+}
+input, textarea{
+  font-size: 30px;
+  color: #DDD;
+  font-weight: 200;
+  padding:10px;
+  width:550px;
+  border: 1px solid #DDD;
+  margin: 5px 0;
+}
+textarea{
+  resize: none;
+  height:160px;
+}
+.contact .teal{
+  margin-bottom: 20px;
+  width: 320px;
+}
+#right{
+  float:right;
+  margin-left: 20px;
+}
+.contact{
+  display: inline-block;
+}
+.chair2{
+  background-image: url('../IMG/red_chair.png');
+  width: 300px;
+  height: 180px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.check{
+  background-image: url('../IMG/form_ok.jpg');
+  width:30px;
+  height: 30px;
+  border: 1px solid #AAA;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+#right .button{
+  width: 150px;
+  padding:10px;
+  font-size: 20px;
+  text-align: center;
 }
