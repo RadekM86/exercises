@@ -1,0 +1,146 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lora", Times, serif;
+  box-sizing: border-box;
+  color:white;
+  text-align: center;
+  font-weight: 200;
+}
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+}
+body{
+  background-color: black;
+}
+header{
+  width: 100%;
+  height: 500px;
+  background-color:#555;
+  background-image: url('../IMG/shoes.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode:multiply;
+  padding-top: 180px;
+}
+nav{
+  width: 100%;
+  background-color:#333;
+  padding: 0;
+  border-bottom: 1px solid #897800;
+}
+.nav li{
+  display: inline-block;
+  padding: 5px 20px;
+  list-style-type: none;
+}
+.nav li:hover{
+  background-color: #897800;
+}
+h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+}
+h1::first-letter{
+  font-size: 50px;
+  line-height: 60px;
+}
+h2{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+h3{
+  color:#998809;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+#bars div{
+  display: inline-block;
+  width: 5%;
+  height:2px;
+  background-color: white;
+  margin: 8px 0;
+}
+#bars :first-child{
+  display: inline-block;
+  width: 5%;
+  height:2px;
+  background-color: green;
+}
+#bars :last-child{
+  display: inline-block;
+  width: 5%;
+  height:2px;
+  background-color: red;
+}
+.anim{
+  display: inline-block;
+}
+.anim path{
+  stroke-dasharray: 10;
+  animation: dash 200s linear;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -10000;
+  }
+}
+#Layer1, #Layer2{
+  display: inline;
+}
+.three{
+  display:inline-block;
+  margin: 0 15px;
+}
+#first, #third{
+  width: 320px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+#first{
+  background-image: url('../IMG/shoes2.jpg');
+}
+#second{
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+}
+#second>p:first-child{
+  font-size: 30px;
+  padding: 30px 0;
+}
+#second>div{
+  height: 2px;
+  width: 100px;
+  background-color: #998809;
+  display: block;
+  margin:10px auto;
+}
+#third{
+  background-image: url('../IMG/shoe1.png');
+  background-size: contain;
+  margin: 0 10px;
+}
+#left, #right{
+  display: inline;
+  font-size: 12px;
+}
+#second:hover{
+  background-color: #222;
+}
+footer{
+  padding: 10px 0;
+}
+#left{
+  float: left;
+}
+#right{
+  float:right;
+}
