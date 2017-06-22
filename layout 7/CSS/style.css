@@ -44,13 +44,16 @@ header{
   z-index: 99;
 }
 h1{
-  margin: 340px auto;
+  margin: 33% auto;
   text-align: center;
   font-size: 100px;
   font-weight: 200;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: white;
+}
+h1:hover{
+  background-color: black;
 }
 .left{
   width: 50%;
@@ -90,11 +93,38 @@ header ul{
 }
 header li{
   display: inline-block;
-  margin: 10px 50px;
+  margin: 10px 30px;
   padding: 10px;
   font-size: 18px;
   font-weight: 400;
   list-style-type: none;
+}
+#dropdown{
+  position: absolute;
+  top: 5px;
+  background-color: none;
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 11;
+}
+#dropdown li{
+  padding: 10px;
+  margin: 5px;
+  display: block;
+}
+#dropdown:hover{
+  top: 64px;
+  background-color: black;
+  color: white;
+  opacity: 1;
+}
+#dropdown li:hover{
+  background-color: white;
+  color: black;
+}
+header li:hover{
+  color:white;
+  background-color: black;
 }
 .right{
   position: relative;
@@ -126,7 +156,7 @@ footer{
   display: block;
   background-color: black;
   color:white;
-  z-index: 1;
+  z-index: 11;
 }
 #copy, #year{
   font-size: 14px;
@@ -146,8 +176,9 @@ footer{
   padding: 10px 50px;
   border-radius: 2px;
   position: fixed;
-  bottom: 50px;
-  left: 50%;
+  bottom: 20px;
+  left: 21%;
+  z-index: 10;
 }
 .button:hover{
   background-color: #222;
