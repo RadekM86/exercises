@@ -69,10 +69,23 @@ header::after{
 #dropdown:hover{
   opacity: 1;
   top: 50px;
+  cursor: pointer;
 }
 #dropdown li:hover{
   background-color: #FFF;
   color: #000;
+  cursor: pointer;
+}
+#diamond{
+  background-color: #000;
+  transform: rotate(45deg);
+  padding: 3px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 45%;
 }
 section::after{
   clear: both;
