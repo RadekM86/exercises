@@ -385,9 +385,7 @@ textarea{
 #check1 + label {
   padding:5px 5px 5px 60px; /*or however wide your graphic is*/
   background-size: contain;
-  border: 1px solid red;
 }
-
 #check1:checked + label {
   background:url('../IMG/form_ok.jpg') no-repeat left center;
   background-size: contain;
@@ -395,6 +393,14 @@ textarea{
 label{
   margin-left: 40px;
   display: inline-block;
+}
+#border{
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 46px;
+  border: 1px solid #24baa0;
+  top: 185px;
 }
 #right .button{
   display: block;
