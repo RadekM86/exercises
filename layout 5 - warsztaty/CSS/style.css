@@ -188,9 +188,8 @@ h1{
 }
 .plan{
   background-color: #EEE;
-  width: 320px;
-  height:460px;
-  float:left;
+  width: 326px;
+  height:497px;
   display: inline-block;
   margin: 30px 0;
   color: #999;
@@ -199,7 +198,8 @@ h1{
   font-weight: 400;
   color: #24baa0;
   text-align: center;
-  position: relative;
+  vertical-align: top;
+
 }
 .price{
   background-color: white;
@@ -222,6 +222,9 @@ sup{
 .price p:last-child{
   font-size: 12px;
   text-align: center;
+}
+.price p:first-child{
+  padding-top:8px;
 }
 #eye{
   background-color: #AAA;
@@ -249,17 +252,19 @@ sup{
 }
 #join{
   color: white;
+  width: 122px;
+  height: 34px;
   margin: 10px auto;
   width: 30%;
-  padding:5px;
+  line-height: 34px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   background-color: #24baa0;
 }
 .middle{
   color: white;
-  margin: 30px 15px;
+  margin: 30px 6px;
   background-color:  #24baa0;
   border: 2px solid  #24baa0;
 }
@@ -323,14 +328,20 @@ textarea{
   background-repeat: no-repeat;
 }
 .check{
-  background-image: url('../IMG/form_ok.jpg');
   width:30px;
   height:30px;
+  padding:15px;
   border: 1px solid #AAA;
+  float: left;
+  margin-right: 10px;
+  background-color: #FFF;
+  border-radius: 0;
+}
+.check:checked{
+  background-image: url('../IMG/form_ok.jpg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  float: left;
 }
 #right .button{
   width: 150px;
@@ -338,8 +349,12 @@ textarea{
   font-size: 20px;
   text-align: center;
 }
+#right .button:hover{
+  cursor: pointer;
+}
 footer>div div{
   display: inline-block;
+    line-height: 40px;
 }
 .copy{
   font-size: 12px;
@@ -368,4 +383,5 @@ footer>div div{
   width:20px;
   height:20px;
   background-size: contain;
+  margin: 10px;
 }
