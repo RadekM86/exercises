@@ -77,7 +77,7 @@ header::after{
   cursor: pointer;
 }
 #diamond{
-  /*
+  /* stary sposób zrobienia 'diamentu'
   background-color: #000;
   transform: rotate(45deg);
   padding: 3px;
@@ -334,8 +334,11 @@ sup{
   margin: 10px 0;
 }
 #left{
-  width: 600px;
-  float:left;
+  top: 0;
+  width: 500px;
+}
+.contact{
+  display: inline-block;
 }
 input, textarea{
   font-size: 30px;
@@ -354,11 +357,7 @@ textarea{
   margin-bottom: 20px;
   width: 320px;
 }
-#right{
-  float:right;
-  margin-left: 20px;
-}
-.contact{
+.contact div{
   display: inline-block;
 }
 .chair2{
@@ -368,30 +367,42 @@ textarea{
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
-.myCheckbox{
+#right{
+  width: 350px;
+  margin-left: 100px;
+  position: relative;
+  top: -40px;
+}
+
+#check1 {
+  display:none;
   width:30px;
-  height:30px;
-  border: 1px solid #AAA;
-  float: left;
-  margin-right: 10px;
-  background-image: url('../IMG/form_ok.jpg');
-  background-position: center;
+  height: 30px
+}
+
+#check1 + label {
+  padding:5px 5px 5px 60px; /*or however wide your graphic is*/
   background-size: contain;
-  background-repeat: no-repeat;
+  border: 1px solid red;
 }
-.myCheckbox[type="checkbox"]{
-  border-radius: 0;
+
+#check1:checked + label {
+  background:url('../IMG/form_ok.jpg') no-repeat left center;
+  background-size: contain;
 }
-.myCheckbox[type="checkbox"]:checked{
-  background-color: #FFF;
-  background-image: '';
+label{
+  margin-left: 40px;
+  display: inline-block;
 }
 #right .button{
+  display: block;
   width: 150px;
   padding:10px;
   font-size: 20px;
   text-align: center;
+  margin: 0 100px;
 }
 #right .button:hover{
   cursor: pointer;
@@ -399,6 +410,10 @@ textarea{
 footer>div div{
   display: inline-block;
     line-height: 40px;
+}
+.footright{
+  float: right;
+  right: 0;
 }
 .copy{
   font-size: 12px;
