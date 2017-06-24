@@ -52,6 +52,28 @@ header::after{
   content: '';
   display: block;
 }
+#dropdown{
+  background-color: #000;
+  color: #FFF;
+  display: block;
+  list-style-type: none;
+  padding: 3px;
+  position: absolute;
+  opacity: 0;
+  top: -20px;
+  transition: all 1s ease;
+}
+#dropdown li{
+  display: block;
+}
+#dropdown:hover{
+  opacity: 1;
+  top: 50px;
+}
+#dropdown li:hover{
+  background-color: #FFF;
+  color: #000;
+}
 section::after{
   clear: both;
   content: '';
@@ -327,21 +349,23 @@ textarea{
   background-size: contain;
   background-repeat: no-repeat;
 }
-.check{
+.myCheckbox{
   width:30px;
   height:30px;
-  padding:15px;
   border: 1px solid #AAA;
   float: left;
   margin-right: 10px;
-  background-color: #FFF;
-  border-radius: 0;
-}
-.check:checked{
   background-image: url('../IMG/form_ok.jpg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.myCheckbox[type="checkbox"]{
+  border-radius: 0;
+}
+.myCheckbox[type="checkbox"]:checked{
+  background-color: #FFF;
+  background-image: '';
 }
 #right .button{
   width: 150px;
