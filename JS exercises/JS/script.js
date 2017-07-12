@@ -1,4 +1,5 @@
 //Zadanie 1
+/*
 console.log("Zadanie 1");
 
 var book = {
@@ -123,3 +124,168 @@ calc1.add(2,2);
 calc1.multiply(2,3);
 calc1.divide(4,2);
 calc1.subtract(6,3);
+*/
+//Zadanie 0 - 01 Tablice
+var sum = 0;
+var newTab = [];
+function distFromAverage (arguments){
+  for (var i = 0; i < arguments.length; i++) {
+    sum = sum + arguments[i]
+  }
+   var average = sum / arguments.length
+   console.log("Średnia to: " + average);
+  for (var j = 0; j < arguments.length; j++) {
+    var distance = Math.abs(arguments[j] - average)
+    newTab.push(distance);
+  }
+  console.log(average);
+  console.log(distance);
+  console.log(newTab);
+ }
+
+distFromAverage([1,2,3,4,5,6,7]);
+//Zadanie 1
+console.log("Zadanie 1 - 1 Tablice");
+
+var array = ["truskawka", "malina", "arbuz", "agrest", "nektaryna", "banan", "ananas"];
+console.log("Pierwszy owoc to" + array[0]);
+console.log("ostatni owoc to: " + array[array.length-1]);
+for (var i = 0; i < array.length; i++) {
+  console.log(array[i]);
+};
+
+//Zadanie 5
+console.log("Zadanie 5 - 1 Tablice");
+var multiplication = 1;
+function multiply (arguments){
+  for (var i = 0; i < arguments.length; i++) {
+    multiplication = multiplication * arguments[i];
+  }
+  console.log(multiplication);
+  return multiplication;
+}
+multiply([1,2,3,4,5,6,7]);
+//Zadanie 6
+console.log("Zadanie 6 - 1 Tablice");
+
+function sortArray(arguments){
+  arguments.sort(function(a,b){
+    return a-b;
+  })
+  console.log(arguments);
+}
+sortArray([1,45,67,2,4,7]);
+
+//Zadanie 7
+console.log("Zadanie 7 - 1 Tablice");
+
+function addArrays(tab1, tab2){
+var tab3 = [];
+if (tab1.length>=tab2.length){
+for (var i = 0; i < tab1.length; i++) {
+      if (i < tab2.length){
+        tab3.push(tab2[i]+tab1[i]);
+      }else{tab3.push(tab1[i])}
+}}else{
+  for (var i = 0; i < tab2.length; i++) {
+      if (i < tab1.length){
+        tab3.push(tab2[i]+tab1[i]);
+      }else{tab3.push(tab2[i])}
+
+}}
+console.log(tab3);
+return tab3
+}
+addArrays([1,2,3,4,5,6],[1,1,1,1,1]);
+
+//zadanie 0 - 2 Tablice wielowymiarowe
+console.log("zadanie 0 - 2 Tablice wielowymiarowe");
+var arr = [
+[11, 12],
+[42, 2],
+[-4, -120],
+[0, 0],
+[1, 34],
+];
+function checkArray(array){
+  var newArray = [];
+  var even = true;
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array[i].length; j++) {
+      if (array[i][j]%2 !==0){
+        even = false;
+        newArray.push(even)
+      }else{
+        even = true;
+        newArray.push(even);
+      }
+    }
+  }
+  console.log(newArray);
+};
+checkArray(arr);
+
+//Zadanie 5 - 2 Tablice wielowymiarowe
+console.log("Zadanie 5 - 2 Tablice wielowymiarowe");
+function create2DArray (row, col){
+var newRow = 0;
+var newCol = [];
+var new2DArray = [];
+for (var i = 0; i < col; i++) {
+  newCol = [];
+    for(var j =0; j<row; j++){
+    newRow++
+    newCol.push(newRow);
+  }
+  new2DArray.push(newCol)
+}
+  return new2DArray;
+  for (var i = 0; i < new2DArray.length; i++) {
+      for (var j = 0; j < new2DArray[i].length; j++) {
+          console.log(new2DArray[i][j])
+      }
+    }
+};
+create2DArray(4,4);
+//Zadanie 0 = 3 Obiekty
+String.prototype.upperLower = function(){
+  var changed = [];
+  var upper = false;
+  for (var i = 0; i < this.length; i++) {
+    if(this[i]!==' '){
+      if(upper){
+        changed.push(this[i].toUpperCase());
+      }
+      else changed.push(this[i].toLowerCase());
+      upper = !upper;
+    }
+    else {
+      changed.push(' ');
+
+    }
+  }
+  console.log(changed.join(' '));
+}
+var funnyTextWithSpace = "Smieszny tekst".upperLower();
+//Drugi sposób - różni się tylko zapisem true / false dla lepszej czytelności
+
+String.prototype.upperLower2 = function(){
+  var tab = [];
+  var upper = false;
+  for (var i = 0; i <this.length; i++){
+    if (this[i] !== " "){
+      if (upper == true){
+        tab.push(this[i].toLowerCase());
+        upper = false;
+      }else{
+        tab.push(this[i].toUpperCase());
+        upper = true;
+      }
+    }else{
+      tab.push(" ");
+    }
+  }
+  var joined = tab.join(' ');
+  console.log(joined);
+}
+var funnyTextWithSpace = "Smieszny tekst".upperLower2();
