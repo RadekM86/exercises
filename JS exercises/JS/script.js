@@ -289,3 +289,121 @@ String.prototype.upperLower2 = function(){
   console.log(joined);
 }
 var funnyTextWithSpace = "Smieszny tekst".upperLower2();
+
+//Zadanie 2
+console.log("Zadanie 2 - 3 Obiekty");
+var person = {
+  name : "John",
+  age : 25,
+  sayHello: function(){
+    console.log("Hello");
+  }
+};
+console.log(person.name);
+console.log(person.age);
+person.sayHello();
+
+//Zadanie 3
+console.log("Zadanie 3 - 3 Obiekty");
+
+var train = {};
+
+console.log(train instanceof Object);
+
+//Zadanie 4
+console.log("Zadanie 4 - 3 Obiekty");
+function Car (brand, color, numberOfKilometers){
+  this.brand = brand;
+  this.color = color;
+  this.numberOfKilometers = numberOfKilometers;
+}
+
+var mercedes = new Car ("Mercedes", "Black", 150);
+console.log(mercedes.brand);
+
+Car.prototype.printCarinfo = function(){
+  console.log(this.brand + " " + this.color + " " + this.numberOfKilometers);
+}
+Car.prototype.drive = function(arguments){
+  this.numberOfKilometers += arguments;
+}
+mercedes.printCarinfo();
+mercedes.drive(20);
+mercedes.printCarinfo();
+
+//Zadanie 6
+console.log("Zadanie 6 - 3 Obeikty");
+var bird = {
+  type : "wróblowate",
+  name : "sikorka",
+  getType : console.log(this.type)
+};
+
+console.log(bird instanceof Object);
+
+//Zadanie 7
+console.log("Zadanie 7 - 3 Obiekty");
+var myString = "String";
+console.log(myString instanceof String);
+console.log(typeof(myString));
+
+var myNumber = 15;
+console.log(myNumber instanceof Number);
+console.log(typeof myNumber);
+
+//Zadanie 9
+console.log("Zadanie 9 - 3 Obiekty");
+
+var Rectangle = function(a,b) {
+  this.a = a;
+  this.b = b;
+}
+Rectangle.prototype.getArea = function(a,b){
+  console.log("Area is " + this.a * this.b);
+}
+Rectangle.prototype.getPerimeter = function(a,b){
+  console.log("Perimeter is " + (2*this.a+2*this.b));
+}
+
+var rect1 = new Rectangle (2,3);
+rect1.getArea();
+rect1.getPerimeter();
+//Zadanie 10
+console.log("Zadanie 10 - 3 Obiekty");
+
+var Calculator = function(a,b){
+  this.a = a;
+  this.b = b;
+  this.history = [];
+}
+Calculator.prototype.add = function(a,b){
+  this.result = this.a + this.b
+  this.history.push("Added "+this.a+" and " + this.b + " the result was " + this.result)
+}
+
+Calculator.prototype.multiply = function(a,b){
+  this.result = this.a * this.b
+  this.history.push("Multiplied "+this.a+" by " + this.b + " the result was " + this.result)
+}
+
+Calculator.prototype.subtract = function(a,b){
+  this.result = this.a - this.b
+  this.history.push("Subtracted "+this.b+" from " + this.a + " the result was " + this.result)
+}
+Calculator.prototype.divide = function(a,b){
+  this.result = this.a / this.b
+  this.history.push("Didived "+this.a+" by " + this.b + " the result was " + this.result)
+}
+
+Calculator.prototype.printHistory = function(){
+  for (var i = 0; i < this.history.length; i++) {
+    console.log(this.history[i]);
+  }
+}
+
+var calc1 = new Calculator(2,2);
+calc1.add();
+calc1.multiply();
+calc1.divide();
+calc1.subtract();
+calc1.printHistory();
