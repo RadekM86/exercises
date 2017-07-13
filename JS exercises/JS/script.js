@@ -401,9 +401,19 @@ Calculator.prototype.printHistory = function(){
   }
 }
 
-var calc1 = new Calculator(2,2);
+Calculator.prototype.power = function(a,b){
+  this.result = 1;
+  for (var i = 0; i< this.b ; i++){
+    this.result = this.result * this.a;
+  }
+  this.history.push(this.a+" power " + this.b + " the result was " + this.result)
+}
+
+
+var calc1 = new Calculator(2,3);
 calc1.add();
 calc1.multiply();
 calc1.divide();
 calc1.subtract();
+calc1.power();
 calc1.printHistory();
