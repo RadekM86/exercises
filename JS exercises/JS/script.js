@@ -126,6 +126,7 @@ calc1.divide(4,2);
 calc1.subtract(6,3);
 */
 //Zadanie 0 - 01 Tablice
+/*
 var sum = 0;
 var newTab = [];
 function distFromAverage (arguments){
@@ -417,3 +418,37 @@ calc1.divide();
 calc1.subtract();
 calc1.power();
 calc1.printHistory();
+*/
+document.addEventListener ( "DOMContentLoaded", function(){
+
+  var button = document.querySelector("#button");
+  var counter = document.querySelector("#counter");
+  var counter1 = 0;
+
+
+
+  button.addEventListener('click', function(){
+    counter1++;
+    button.style.backgroundColor = "aqua";
+    counter.innerText = counter1;
+    if (counter1 >= 12){
+      counter.innerHTML = "<div>koniec liczenia</div>";
+    var newDiv = document.createElement("div")
+    if (counter1 >=20){
+    button.appendChild(newDiv);
+    newDiv.classList.add('alert')
+    newDiv.innerText = "weź już przestań.."}
+  }});
+var counter2 = 0;
+var seconds = document.querySelector("#seconds");
+var times = document.querySelector("#timer");
+var interval = setInterval(function(){
+  counter2++
+  times.innerText = counter2;
+  if (counter2 === 30){
+    clearInterval(interval)
+  }
+},1000);
+
+
+});
