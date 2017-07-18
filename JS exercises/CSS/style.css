@@ -1,58 +1,31 @@
-body{
-  font-family: monospace;
-  font-size: 20px;
-  background-color: #323232;
-  box-sizing: border-box;
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: black 2px solid;
+    margin: 20px;
 }
 
-#button{
-  margin: 10px auto;
-  background-color: beige;
-  width: 300px;
-  text-align: center;
-  padding: 120px 0;
+.hidden {
+    visibility: hidden;
+
 }
-#description{
-  text-align: center;
-  margin: 20px auto;
+
+.button {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 25px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
 }
-.alert{
-  background-color: red;
-  padding: 20px;
-  margin: 10px auto;
-}
-.title{
-  color: #22FF00;
-  text-align: center;
-  margin: 30px auto;
-  font-size: 40px;
-  font-family: Courier, monospace;
-}
-#card{
-  width: 250px;
-  height: 350px;
-  border-radius: 20px;
-  background-color: #FFF;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 150px;
-}
-#target{
-  background-color: #0A1;
-  padding: 100px;
-  border-radius: 20px 20px 0 0 ;
-}
-.generate{
-  background-color: #999;
-  color: #FFF;
-  width: 230px;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
-.little {
-  width: 50px;
-  height: 75px;
-  border-radius: 5px;
+
+.listContainer {
+    border-radius: 5px;
+    border: black 2px solid;
+    margin: 20px;
 }
