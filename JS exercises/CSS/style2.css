@@ -4,6 +4,15 @@ body{
   background-color: #323232;
   box-sizing: border-box;
 }
+header{
+    color: #22FF00;
+
+}
+#counter{
+  display: block;
+  position: relative;
+  left: 100px;
+}
 
 #button{
   margin: 10px auto;
@@ -24,9 +33,19 @@ body{
 .title{
   color: #22FF00;
   text-align: center;
-  margin: 30px auto;
+  margin: 20px auto;
   font-size: 40px;
   font-family: Courier, monospace;
+}
+.card{
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #FFF;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 150px;
 }
 #card{
   width: 250px;
@@ -52,7 +71,29 @@ body{
   text-align: center;
 }
 .little {
+  display: inline-block;
   width: 50px;
-  height: 75px;
+  height: 50px;
   border-radius: 5px;
+  padding: 25px 5px;
+  background-color: #AAA;
+  font-size: 15px;
+  line-height: 20px;
+
+}
+#select{
+  width: 500px;
+  margin: 0 auto;
+}
+#mixerSubtract{
+  width: 500px;
+  background-color: #444;
+  border-radius: 25px;
+  margin: 10px auto;
+}
+#mixerAdd{
+  width: 500px;
+  margin: 10px auto;
+  background-color: #AAA;
+    border-radius: 25px;
 }
