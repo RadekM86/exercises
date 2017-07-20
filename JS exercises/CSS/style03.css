@@ -1,0 +1,40 @@
+body{
+  font-family: monospace;
+  font-size: 15px;
+  background-color: #BBB;
+  box-sizing: border-box
+}
+#color{
+  width : 150px;
+  height: 250px;
+  margin: 10px auto;
+  border-radius: 25px;
+  background-color: rgb(200, 100,0);
+  text-align: center;
+  line-height: 25px;
+  padding-top: 25px;
+}
+#cards{
+  width: 170px;
+  margin: 0 auto;
+}
+
+.generate{
+  background-color: #999;
+  color: #FFF;
+  width: 160px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.little{
+  display: inline-block;
+  width : 50px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: rgb(200, 100,0);
+  text-align: center;
+  padding-top: 5px;
+}
