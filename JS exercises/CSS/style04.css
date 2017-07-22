@@ -1,0 +1,14 @@
+table{
+  border: 2px solid gray;
+}
+td{
+  border: 1px solid gray;
+  width: 100px;
+  height: 100px;
+  padding:20px;
+  text-align: center;
+}
+table{
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+}
