@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0CA;
+  color: #707;
+}
+
+html {
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 10px auto;
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  border: 1px solid #0F0;
+  background-color: #C0A;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+    background-color: #0AC;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    display: flex;
+    background-color: #0CA;
+  }
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h1:hover {
+  background-color: #707;
+}
+
+h1:active {
+  background-color: #0F0;
+}
+
+/*# sourceMappingURL=.maps/main.css.map */
