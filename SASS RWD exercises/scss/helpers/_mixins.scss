@@ -1,5 +1,5 @@
 
-
+@import "helpers/var";
 
 @mixin breakpoint ($breakpoint) {
   @if $breakpoint == mobile{
@@ -15,4 +15,8 @@
         @content;
       }
     }
+  }
+
+  @mixin borders ($direction) {
+      border-#{$direction}-color: map-get($colors-map, #{$direction});
   }

@@ -10,3 +10,21 @@ $body-color: #0CA;
 $font-color: #707;
 $mobile-color: #C0A;
 $tablet-color: #0AC;
+
+$colors:(
+header: #F0C,
+footer: #C0F,
+middle: #0FC,
+second: #0CF,
+third: #FC0,
+fourth: #CF0,
+);
+
+$list: #F0C #C0F #0FC #0CF #FC0 #CF0;
+
+$colors-map: (
+top: #F0C,
+bottom: #0CF,
+left: #FC0,
+right: #CF0,
+);

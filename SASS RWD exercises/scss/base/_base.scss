@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 body{
   background-color: $body-color;
@@ -13,6 +14,23 @@ html{
 li{
   list-style-type: none;
 }
+.list{
+  display: flex;
+li{
+    padding-left: 20px;
+    margin-left: 20px;
+  &:nth-child(2){
+      color: hotpink;
+    }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: $font-color;
+    &:visited{
+      color: inherit;
+    }
+
+  }}}
 .container{
   margin: 10px auto;
   width: 80vw;
@@ -38,4 +56,38 @@ h1{
   &:active{
     background-color: #0F0;
   }
+}
+
+
+$directions: "top", "bottom", "left", "right";
+
+.container2{
+  font-size: 2rem;
+  width: 80vw;
+  height: 50vh;
+  margin: 0 auto;
+  border: 25px solid;
+  background-color: white;
+  padding: 20px;
+  @include borders(top);
+  @include borders(bottom);
+  @include borders(left);
+  @include borders(right);
+
+
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    @for $i from 1 through 5 {
+      li{
+        &:nth-child(#{$i}){
+          color: nth($list, $i);
+        }
+      }
+  }
+
+
+  }
+
 }
