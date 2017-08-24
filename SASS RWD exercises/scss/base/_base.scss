@@ -83,7 +83,7 @@ $directions: "top", "bottom", "left", "right";
       li{
         &:nth-child(#{$i}){
           color: nth($list, $i);
-        }
+            }
       }
   }
 
