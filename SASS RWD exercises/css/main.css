@@ -1,45 +1,221 @@
-* { margin: 0; padding: 0; font-family: Arial, sans-serif; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
-body { background-color: #0CA; color: #707; }
+body {
+  background-color: navy;
+  color: #707;
+}
 
-html { font-size: 20px; }
+html {
+  font-size: 20px;
+}
 
-li { list-style-type: none; }
+li {
+  list-style-type: none;
+}
 
-.list { display: flex; }
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.list li { padding-left: 20px; margin-left: 20px; }
+.list li {
+  padding-left: 20px;
+  margin-left: 20px;
+  padding: 12px;
+}
 
-.list li:nth-child(2) { color: hotpink; }
+.list li:nth-child(2) {
+  color: hotpink;
+}
 
-.list li a { text-decoration: none; cursor: pointer; color: #707; }
+.list li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #707;
+}
 
-.list li a:visited { color: inherit; }
+.list li a:visited {
+  color: inherit;
+}
 
-.container { margin: 10px auto; width: 80vw; height: 100%; display: flex; border: 1px solid #0F0; background-color: #C0A; }
+.container {
+  margin: 10px auto;
+  width: 80vw;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  border: 1px solid #0F0;
+  background-color: #C0A;
+}
 
-@media (min-width: 1200px) { .container { display: flex; background-color: #0AC; } }
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+    background-color: #0AC;
+  }
+}
 
-@media (min-width: 1600px) { .container { display: flex; background-color: #0CA; } }
+@media (min-width: 1600px) {
+  .container {
+    display: flex;
+    background-color: #0CA;
+  }
+}
 
-h1 { font-weight: 700; }
+h1 {
+  font-weight: 700;
+}
 
-h1:hover { background-color: #707; }
+h1:hover {
+  background-color: #707;
+}
 
-h1:active { background-color: #0F0; }
+h1:active {
+  background-color: #0F0;
+}
 
-.container2 { font-size: 2rem; width: 80vw; height: 50vh; margin: 0 auto; border: 25px solid; background-color: white; padding: 20px; border-top-color: #F0C; border-bottom-color: #0CF; border-left-color: #FC0; border-right-color: #CF0; }
+.container2 {
+  font-size: 2rem;
+  width: 80vw;
+  height: 50vh;
+  margin: 0 auto;
+  border: 25px solid;
+  background-color: white;
+  padding: 20px;
+  border-top-color: #F0C;
+  border-bottom-color: #0CF;
+  border-left-color: #FC0;
+  border-right-color: #CF0;
+}
 
-.container2 ul { display: flex; flex-flow: row wrap; justify-content: space-around; }
+.container2 ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
-.container2 ul li:nth-child(1) { color: #F0C; }
+.container2 ul li:nth-child(1) {
+  color: #F0C;
+}
 
-.container2 ul li:nth-child(2) { color: #C0F; }
+@media (max-width: 400px) {
+  .container2 ul {
+    flex-flow: column;
+  }
+  .container2 ul li {
+    margin: 20px;
+  }
+}
 
-.container2 ul li:nth-child(3) { color: #0FC; }
+.container2 ul li:nth-child(2) {
+  color: #C0F;
+}
 
-.container2 ul li:nth-child(4) { color: #0CF; }
+@media (max-width: 400px) {
+  .container2 ul {
+    flex-flow: column;
+  }
+  .container2 ul li {
+    margin: 20px;
+  }
+}
 
-.container2 ul li:nth-child(5) { color: #FC0; }
+.container2 ul li:nth-child(3) {
+  color: #0FC;
+}
+
+@media (max-width: 400px) {
+  .container2 ul {
+    flex-flow: column;
+  }
+  .container2 ul li {
+    margin: 20px;
+  }
+}
+
+.container2 ul li:nth-child(4) {
+  color: #0CF;
+}
+
+@media (max-width: 400px) {
+  .container2 ul {
+    flex-flow: column;
+  }
+  .container2 ul li {
+    margin: 20px;
+  }
+}
+
+.container2 ul li:nth-child(5) {
+  color: #FC0;
+}
+
+@media (max-width: 400px) {
+  .container2 ul {
+    flex-flow: column;
+  }
+  .container2 ul li {
+    margin: 20px;
+  }
+}
+
+h1 {
+  background-color: #F0C;
+  font-size: 1em;
+}
+
+.arrow-top, .arrow-bottom, .arrow-left, .arrow-right {
+  border: 30px solid transparent;
+  height: 0;
+  width: 0;
+  display: inline-block;
+  margin: 10px;
+}
+
+.arrow-top {
+  border-top-color: blue;
+  margin-top: 40px;
+}
+
+.arrow-bottom {
+  border-bottom-color: blue;
+  margin-bottom: 40px;
+}
+
+.arrow-left {
+  border-left-color: blue;
+  margin-left: 40px;
+}
+
+.arrow-right {
+  border-right-color: blue;
+  margin-right: 40px;
+}
+
+.success, .error, .info {
+  width: 300px;
+  height: 100px;
+  border: 2px solid;
+}
+
+.success {
+  border-color: #999900;
+  background-color: yellow;
+}
+
+.error {
+  border-color: #990000;
+  background-color: red;
+}
+
+.info {
+  border-color: #009999;
+  background-color: aqua;
+}
 
 /*# sourceMappingURL=.maps/main.css.map */

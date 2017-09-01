@@ -25,7 +25,7 @@ gulp.task('alert', function(){
 gulp.task('sass', function(){
   return gulp.src('scss/**/*.scss')
   .pipe(sourcemaps.init())
-  .pipe(sass({outputStyle: 'compact',  errLogToConsole: true}).on('error', sass.logError))
+  .pipe(sass({outputStyle: 'expanded',  errLogToConsole: true}).on('error', sass.logError))
   .pipe(sourcemaps.write('.maps'))
   .pipe(gulp.dest('css'))
 });

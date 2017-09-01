@@ -5,11 +5,14 @@ $desktop-width: 1600px;
 $col-number: 12;
 $col-base: 100% / $col-number;
 
+$direction: top, bottom, left, right;
+$colors: red, blue, green, orange;
 
 $body-color: #0CA;
 $font-color: #707;
 $mobile-color: #C0A;
 $tablet-color: #0AC;
+$padding: 12px;
 
 $colors:(
 header: #F0C,
